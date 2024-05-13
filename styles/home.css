@@ -1,0 +1,131 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url('../assets/bg.png')no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.container h2 {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 12px;
+  line-height: 60px;
+  animation: shadow-effect 2s infinite alternate;
+}
+
+@keyframes shadow-effect {
+  0% {
+    text-shadow: 0px 0px 15.1px rgba(255, 255, 255, 0.25);
+  }
+
+
+  100% {
+    text-shadow: none;
+  }
+}
+
+.container h2 span {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: #e1e1e1;
+}
+
+.object {
+  height: 200px;
+}
+
+@media (max-width:800px) {
+  .container h2 {
+    font-size: 60px;
+    letter-spacing: 19px;
+    line-height: 35px;
+  }
+
+  .container h2 span {
+    font-size: 26px;
+  }
+}
+
+#logo {
+  position: fixed;
+  height: 36px;
+  left: 24px;
+  top: 10px;
+  z-index: 101;
+  transition: all 0.5s ease-in;
+}
+
+#logo:hover {
+  transform: rotate(540deg);
+}
+
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  padding-left: 16px;
+  height: 48px;
+  width: 100vw;
+  z-index: 100;
+  padding-top: 12px;
+  padding-right: 648px;
+  background-color: #222222;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin-left: 28px;
+  color: #FBFDFF;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 36px;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #FBFDFF;
+  font-family: Montserrat, sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

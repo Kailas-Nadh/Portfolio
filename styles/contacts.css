@@ -1,0 +1,184 @@
+.contacts-container h1 {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 64px;
+    font-family: "Roboto Mono", monospace;
+    background: linear-gradient(to right, #A11224, #C56144);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 80%;
+    font-size: 96px;
+}
+
+.command-line {
+    display: inline-block;
+    font-family: "Roboto Mono", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 36px;
+    animation: typing-animation 3s steps(40) infinite;
+}
+
+.cursor {
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes typing-animation {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.contacts-container {
+    font-family: "Roboto Mono", monospace;
+}
+
+.contact-list {
+    line-height: 48px;
+    margin-left: 64px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.single-contact {
+    text-decoration: none;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+    background: linear-gradient(to right, #A11224, #C56144);
+    padding: 8px 36px 8px 36px;
+    width: 280px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    border-color: #FFFFFF;
+    transition: all 0.5s ease-in;
+}
+
+.social-logo-1 {
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 30px;
+}
+
+.social-logo-2 {
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 30px;
+}
+
+.social-logo-3 {
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 30px;
+}
+
+.social-logo-4 {
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 30px;
+}
+
+.social-logo-5 {
+    margin-top: 10px;
+    padding-right: 8px;
+    width: 30px;
+}
+
+p {
+    margin-left: 8px;
+}
+
+.single-contact:hover {
+    background: transparent;
+    transform: translate(48px);
+    border-image: linear-gradient(to right, #A11224, #C56144) 1;
+}
+
+.single-contact:hover p {
+    background: linear-gradient(to right, #A11224, #C56144);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.single-contact:hover .social-logo-1 {
+    content: url(../assets/Gmail-gradient.png);
+}
+
+.single-contact:hover .social-logo-2 {
+    content: url(../assets/Github-gradient.png);
+}
+
+.single-contact:hover .social-logo-3 {
+    content: url(../assets/Behance\ -gradient.png);
+}
+
+.single-contact:hover .social-logo-4 {
+    content: url(../assets/Instagram-gradient.png);
+}
+
+.single-contact:hover .social-logo-5 {
+    content: url(../assets/Telegram-gradient.png);
+}
+
+/* .chat-image{
+    position:absolute;
+    top:280px;
+    right:640px;
+    width:240px;
+} */
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.chat-image {
+    position: absolute;
+    bottom: -90px;
+    right: 230px;
+    width: 48px;
+    animation: heartbeat 1.5s infinite;
+    /* Apply the heartbeat animation */
+}
+
+.code-love {
+    position: absolute;
+    bottom: -80px;
+    right: 24px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    color: #FFFFFF;
+    animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #FFFFFF;
+    }
+
+    50% {
+        background: linear-gradient(to right, #A11224, #C56144);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}

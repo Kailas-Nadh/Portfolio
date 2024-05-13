@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./styles/home.css">
+  </head>
+  <body>
+
+    <img id="logo" src="./assets/Logo.png" alt="Logo">
+    <nav class="navbar">
+        <ul>
+            <li><b>My Portfolio</b></li>
+            <li><a class="nav_link" href="./home.html">Home</a></li>
+            <li><a class="nav_link" href="./about.html">About</a></li>
+            <li><a class="nav_link" href="./projects.html">Projects</a></li>
+            <li><a class="nav_link" href="./contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+      <h2 class="object" data-value="3">KAILAS NADH J<br><span>My Portfolio</span></h2>
+      <img src="./assets/wifi.png" class="object" data-value="-2" alt="">
+      <img src="./assets/gps.png" class="object" data-value="6" alt="">
+      <img src="./assets/jigsaw.png" class="object" data-value="4" alt="">
+      <img src="./assets/files.png" class="object" data-value="-6" alt="">
+      <img src="./assets/location.png" class="object" data-value="8" alt="">
+      <img src="./assets/mic.png" class="object" data-value="-4" alt="">
+      <img src="./assets/link.png" class="object" data-value="5" alt="">
+      <img src="./assets/circle.png" class="object" data-value="-9" alt="">
+      <img src="./assets/fast-forward.png" class="object" data-value="-5" alt="">
+    </div>
+
+    <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+      document.querySelectorAll(".object").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 250;
+        var y = (e.clientY * moving_value) / 250;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+    </script>
+
+  </body>
+</html>

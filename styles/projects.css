@@ -1,0 +1,67 @@
+body {
+    background: url('../assets/big-bg.png')no-repeat !important;
+    background-size: cover;
+    height: 160vh;
+  }
+.projects-container{
+    padding-bottom: 128px;
+}
+.projects-container h1{
+    position: relative;
+    margin-top:60px;
+    margin-left: 64px;
+    font-family: "Roboto Mono",monospace;
+    background: linear-gradient(to right, #A11224, #C56144);
+    -webkit-text-fill-color: transparent;-webkit-background-clip: text;    
+    width:80%;
+    font-size: 96px;
+} 
+
+.command-line {
+    display: inline-block;
+    font-family: "Roboto Mono",monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-animation 3s steps(40) infinite;
+}
+
+.cursor {
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes typing-animation {
+    from { width: 0; }
+}
+
+@keyframes cursor-blink {
+    50% { opacity: 0; }
+}
+
+.single-project{
+    font-family: "Roboto Mono",monospace;
+    margin-top:48px;
+    margin-left:64px;
+    border: solid;
+    border-image: linear-gradient(to right, #A11224, #C56144) 1;
+    padding: 24px;
+    width:80%;
+    background-color: #222222;
+    transition: all 0.5s ease-in;
+}
+.single-project:hover{
+    scale: 1.01;
+    background: linear-gradient(to right, #A11224, #C56144);
+    border-radius: 4px;
+}
+.single-project h2{
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.single-project p{
+    color: #FFFFFF;
+    line-height: 36px;
+}
+a{
+    text-decoration: none;
+}

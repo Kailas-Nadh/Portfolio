@@ -1,0 +1,92 @@
+.about-container h1{
+    position: relative;
+    margin-top:60px;
+    margin-left: 64px;
+    font-family: "Roboto Mono",monospace;
+    background: linear-gradient(to right, #A11224, #C56144);
+    -webkit-text-fill-color: transparent;-webkit-background-clip: text;    
+    width:80%;
+    font-size: 96px;
+} 
+
+.command-line {
+    display: inline-block;
+    font-family: "Roboto Mono",monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-animation 3s steps(40) infinite;
+}
+
+.cursor {
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes typing-animation {
+    from { width: 0; }
+}
+
+@keyframes cursor-blink {
+    50% { opacity: 0; }
+}
+
+.about-container p{
+    position: relative;
+    margin-top:16px;
+    margin-left: 64px;
+    font-family: "Roboto Mono",monospace;
+    color: white;
+    width:60%;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.download-CV{
+    background: linear-gradient(to right, #A11224, #C56144);
+    color: #FFFFFF;  
+    margin: 32px 0px 32px 64px;
+    padding:10px;
+    font-family: "Roboto Mono",monospace;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: #ffffff;
+    width:128px;
+    transform: all 0.4s ease-in;
+}
+.download-CV:hover{
+    position: relative;
+    background: transparent;
+    border-image: linear-gradient(to right, #A11224, #C56144) 1;
+    border-radius: 4px;
+    background: linear-gradient(to right, #A11224, #C56144);
+    -webkit-text-fill-color: transparent;-webkit-background-clip: text;      
+}
+.circle{
+    position:absolute;
+    top:180px;
+    right:160px;
+    height:180px;
+    width:180px;
+    border-radius:50%;
+    box-shadow: 0px 4px 4px rgba(197, 68, 141, 0);
+    background: linear-gradient(to right, #A11224, #C56144);
+    animation: shadow-effect 2s infinite alternate;
+}
+@keyframes shadow-effect {
+    0% {
+        box-shadow: 4px 4px 30px 10px rgba(255, 237, 232, 0.25);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+.profile-pic{
+    position:absolute;
+    top:68px;
+    right:106px;
+    transform: all 0.1s ease-in;
+
+}.profile-pic:hover {
+    /* Change image on hover */
+    content: url(../assets/profile-pic-bright.png); /* Set the new image source */
+}
